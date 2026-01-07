@@ -3,295 +3,197 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Materi — Portofolio Jaysen</title>
+<title>Materi Blog — Portofolio Jaysen</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-  :root{
-    --bg:#0b0f14;
-    --card:#111a25;
-    --text:#e6eef6;
-    --muted:#a0acb8;
-    --accent:#00d4ff;
-    --accent2:#7b61ff;
-    --glass:rgba(255,255,255,0.03);
-    --radius:14px;
-  }
+:root{
+  --bg:#0b0f14;
+  --card:#111a25;
+  --text:#e6eef6;
+  --muted:#a0acb8;
+  --accent:#00d4ff;
+  --accent2:#7b61ff;
+  --glass:rgba(255,255,255,0.04);
+  --radius:16px;
+}
 
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(#0b0f14,#071018);
-    color:var(--text);
-    display:flex;
-  }
+*{margin:0;padding:0;box-sizing:border-box}
 
-  /* SIDEBAR */
-  aside{
-    width:230px;
-    background:#0f1720;
-    height:100vh;
-    position:fixed;
-    left:0;
-    top:0;
-    border-right:1px solid rgba(255,255,255,0.06);
-    padding:25px 20px;
-  }
+body{
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(#0b0f14,#071018);
+  color:var(--text);
+}
 
-  aside h2{
-    font-size:20px;
-    font-weight:700;
-    margin-bottom:25px;
-    text-align:center;
-  }
+main{
+  max-width:900px;
+  margin:0 auto;
+  padding:40px 20px;
+}
 
-  .side-list{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    margin-top:10px;
-  }
+header{
+  text-align:center;
+  margin-bottom:50px;
+}
 
-  .side-list a{
-    padding:10px 14px;
-    background:var(--glass);
-    border-radius:10px;
-    text-decoration:none;
-    color:var(--text);
-    font-weight:500;
-    transition:0.25s;
-    border:1px solid rgba(255,255,255,0.04);
-  }
+header h1{
+  font-size:34px;
+  margin-bottom:10px;
+}
 
-  .side-list a:hover{
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
-    color:#041018;
-  }
+header p{
+  color:var(--muted);
+  font-size:15px;
+}
 
-  /* MAIN CONTENT */
-  main{
-    margin-left:230px;
-    padding:35px 35px;
-    width:100%;
-  }
+.article{
+  background:var(--glass);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:var(--radius);
+  padding:32px;
+  margin-bottom:60px;
+}
 
-  h1{
-    font-size:32px;
-    margin-bottom:35px;
-    text-align:center;
-  }
+.article img{
+  width:100%;
+  border-radius:14px;
+  margin:25px 0;
+  border:1px solid rgba(255,255,255,0.08);
+}
 
-  .card{
-    padding:28px;
-    background:var(--glass);
-    border-radius:var(--radius);
-    border:1px solid rgba(255,255,255,0.06);
-    margin-bottom:45px;
-    backdrop-filter:blur(6px);
-  }
+.article h2{
+  font-size:26px;
+  margin-bottom:14px;
+}
 
-  h2{
-    font-size:26px;
-    margin-bottom:18px;
-    font-weight:600;
-  }
+.article h3{
+  font-size:18px;
+  margin-top:24px;
+  margin-bottom:8px;
+  color:var(--accent);
+}
 
-  h3{
-    margin:22px 0 10px 0;
-    font-size:18px;
-    color:var(--accent);
-  }
+.article p{
+  font-size:15px;
+  line-height:1.6;
+  color:var(--muted);
+  margin-bottom:10px;
+}
 
-  p{
-    margin-bottom:10px;
-    line-height:1.55;
-    color:var(--muted);
-    font-size:15px;
-  }
-
-  .btn{
-    display:block;
-    width:230px;
-    margin:50px auto;
-    padding:14px;
-    text-align:center;
-    background:linear-gradient(90deg,var(--accent),var(--accent2));
-    border-radius:12px;
-    color:#041018;
-    text-decoration:none;
-    font-weight:600;
-    font-size:16px;
-  }
+.btn{
+  display:block;
+  width:240px;
+  margin:60px auto 0;
+  padding:14px;
+  text-align:center;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  border-radius:12px;
+  color:#041018;
+  text-decoration:none;
+  font-weight:600;
+}
 </style>
 </head>
 
 <body>
 
-<!-- SIDEBAR -->
-<aside>
-  <h2>Daftar Materi</h2>
-
-  <div class="side-list">
-    <a href="#m1">Materi 1</a>
-    <a href="#m2">Materi 2</a>
-    <a href="#m3">Materi 3</a>
-    <a href="#m4">Materi 4</a>
-  </div>
-</aside>
-
-<!-- MAIN -->
 <main>
 
-  <h1>Materi Pembelajaran</h1>
+<header>
+  <h1>Materi Pembelajaran Website</h1>
+  <p>Ringkasan konsep kualitas sistem, informasi, layanan, dan kepuasan pengguna</p>
+</header>
 
-  <!-- MATERI 1 -->
-  <div class="card" id="m1">
-    <h2>BAB 1. Kualitas Sistem</h2>
+<section class="article">
+  <h2>BAB 1. Kualitas Sistem</h2>
 
-    <h3>1.1 Pengertian Kualitas Sistem</h3>
-    <p>Kualitas sistem adalah tingkat kemampuan suatu website dalam menyediakan fungsi yang stabil, mudah digunakan, cepat diakses, dan mampu bekerja sesuai kebutuhan pengguna. Dalam pengembangan website, kualitas sistem menjadi dasar penting karena memengaruhi apakah pengguna merasa nyaman atau justru terbebani saat menggunakan web tersebut.</p>
+  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Ilustrasi sistem website">
 
-    <h3>1.2 Peran Kualitas Sistem dalam Pengembangan Website</h3>
-    <p>Dalam konteks tugas pembuatan website, kualitas sistem berperan sebagai fondasi utama. Website yang tampilannya bagus belum tentu berkualitas jika sistemnya error, lambat, atau sulit digunakan. Karena itu, mahasiswa perlu memahami aspek teknis yang mendukung berjalannya sistem dengan baik.</p>
+  <h3>Pengertian</h3>
+  <p>Kualitas sistem menunjukkan kemampuan website berjalan stabil, cepat, dan mudah digunakan. Sistem yang baik membuat pengguna nyaman saat mengakses halaman dan fitur.</p>
 
-    <h3>1.3 Indikator Kualitas Sistem</h3>
-    <p>1. Usability <br> Website harus mudah dipahami oleh pengguna baru. Menu, tombol, dan navigasi harus jelas serta tidak membingungkan. Contoh. menu navbar yang konsisten di setiap halaman.</p>
-    <p>2. Reliability <br> Sistem harus dapat berjalan stabil ketika digunakan. Tidak boleh sering error, halaman tidak boleh not found, dan fitur harus berfungsi setiap saat.</p>
-    <p>3. Efficiency dan Performance <br> Website sebaiknya dapat dibuka dengan cepat. Loading yang terlalu lama membuat pengguna kehilangan minat. Faktor yang memengaruhi. ukuran gambar, jumlah script, struktur HTML.</p>
-    <p>4. Security <br> Walau website tugas sederhana, keamanan tetap diperlukan, seperti validasi input, password tidak ditampilkan, dan data tidak mudah dimanipulasi.</p>
-    <p>5. Functionality <br> Semua fitur yang direncanakan harus berfungsi. Jika website memiliki halaman login, maka fitur itu harus berjalan sesuai prosedur.</p>
+  <h3>Peran dalam Website</h3>
+  <p>Kualitas sistem menjadi dasar utama. Tampilan menarik tidak cukup jika website lambat, error, atau sulit dipakai.</p>
 
-    <h3>1.4 Penerapan Kualitas Sistem pada Website Proyek</h3>
-    <p>Gunakan struktur kode yang rapi dan terorganisir.</p>
-    <p>Pastikan menu dapat diakses dari setiap halaman.</p>
-    <p>Lakukan pengecekan error melalui console browser.</p>
-    <p>Optimalkan gambar agar ukuran file tidak terlalu besar.</p>
-    <p>Uji website di HP dan laptop untuk memastikan kecepatan stabil.</p>
+  <h3>Indikator</h3>
+  <p>Usability. Navigasi jelas dan konsisten.</p>
+  <p>Reliability. Fitur selalu berjalan.</p>
+  <p>Performance. Waktu loading singkat.</p>
+  <p>Security. Data pengguna terlindungi.</p>
+  <p>Functionality. Semua fitur berfungsi sesuai tujuan.</p>
 
-    <h3>1.5 Pentingnya Kualitas Sistem</h3>
-    <p>Kualitas sistem yang baik meningkatkan.</p>
-    <p>Pengalaman pengguna.</p>
-    <p>Efisiensi penggunaan.</p>
-    <p>Tingkat kepuasan.</p>
-    <p>Kemungkinan pengguna kembali.</p>
-  </div>
+  <h3>Penerapan</h3>
+  <p>Gunakan struktur kode rapi.</p>
+  <p>Optimalkan gambar dan script.</p>
+  <p>Uji website di berbagai perangkat.</p>
+</section>
 
-  <!-- MATERI 2 -->
-  <div class="card" id="m2">
-    <h2>BAB 2. Kualitas Informasi</h2>
+<section class="article">
+  <h2>BAB 2. Kualitas Informasi</h2>
 
-    <h3>2.1 Pengertian Kualitas Informasi</h3>
-    <p>Kualitas informasi adalah sejauh mana konten yang ditampilkan website benar, relevan, lengkap, dan tidak membingungkan pengguna. Informasi yang baik harus akurat, mudah dipahami, dan disusun secara terstruktur. Bahkan jika datanya benar, tetapi penyajiannya berbelit-belit atau tidak sesuai kebutuhan pengguna, informasi tetap dianggap tidak berkualitas. Oleh karena itu, kualitas informasi mencakup isi, cara penyampaian, serta kesesuaian dengan audiens.</p>
-    
-    <h3>2.2 Peran Kualitas Informasi dalam Pembuatan Web</h3>
-    <p>Dalam pembuatan website, mahasiswa tidak cukup hanya fokus pada tampilan visual. Isi informasi harus benar, sistematis, dan memberikan nilai tambah bagi pengguna. Website dengan tampilan menarik namun berisi informasi yang keliru atau tidak jelas tetap dianggap gagal dalam fungsi utamanya. Informasi berkualitas membantu pengguna menemukan jawaban dengan cepat, meningkatkan pemahaman, dan mendukung tujuan utama website. Selain itu, kualitas informasi juga menjadi indikator kemampuan mahasiswa dalam menganalisis dan menyusun konten yang relevan.</p>
-    
-    <h3>2.3 Indikator Kualitas Informasi</h3>
-    <p>1. Akurasi <br> Informasi harus benar, valid, dan dapat dipertanggungjawabkan. Contoh. website profil toko harus mencantumkan alamat dan nomor kontak yang benar.</p>
-    <p>2. Relevansi <br> Informasi harus sesuai dengan tujuan dan kebutuhan pengguna. Contoh. web portofolio menampilkan karya, bukan hal yang tidak relevan.</p>
-    <p>3. Kelengkapan <br> Setiap halaman harus memberikan informasi secara utuh, tidak setengah-setengah. Contoh. halaman Contact harus berisi alamat, email, dan nomor telepon.</p>
-    <p>4. Konsistensi <br> Gaya bahasa, format teks, istilah, warna, dan struktur halaman harus konsisten agar website mudah dipahami.</p>
-    <p>5. Ketepatan waktu <br> Informasi harus diperbarui secara berkala agar tidak kadaluarsa. Contoh. jadwal kegiatan atau promosi harus selalu update.</p>
-    <p>6. Objektivitas <br> Informasi harus netral, tidak bias, dan tidak menyesatkan. Contoh. website review harus berdasarkan data atau pengalaman nyata.</p>
-    <p>7. Kejelasan <br> Informasi harus disampaikan dengan bahasa yang mudah dipahami sesuai target pengguna. Contoh. website sekolah menggunakan bahasa sederhana bagi siswa dan orang tua.</p>
-    
-    <h3>2.4 Penerapan Kualitas Informasi pada Website Proyek</h3>
-    <p>Menuliskan paragraf yang jelas, ringkas, dan mudah dipahami.</p>
-    <p>Menentukan tujuan setiap halaman sebelum membuat kontennya.</p>
-    <p>Menghindari penggunaan teks dummy berlebihan seperti Lorem ipsum.</p>
-    <p>Melakukan pengecekan fakta sebelum mempublikasikan informasi.</p>
-    <p>Menghindari duplikasi konten yang dapat membingungkan pengguna.</p>
-    <p>Menggunakan heading, subheading, bullet, dan paragraf singkat untuk memperjelas struktur.</p>
-    <p>Menyediakan visual pendukung seperti ikon atau gambar bila diperlukan.</p>
-    <p>Memastikan informasi selalu diperbarui, terutama untuk konten yang sensitif waktu.</p>
-    <p>Memberikan sumber atau referensi untuk informasi penting atau ilmiah.</p>
-    
-    <h3>2.5 Dampak Informasi yang Berkualitas</h3>
-    <p>Meningkatkan pemahaman pengguna.</p>
-    <p>Membuat website terlihat profesional dan terpercaya.</p>
-    <p>Mengurangi pertanyaan atau kebingungan pengguna.</p>
-    <p>Meningkatkan kredibilitas pembuat website.</p>
-    <p>Memperkuat citra brand atau organisasi.</p>
-    <p>Mendukung SEO sehingga website lebih mudah ditemukan.</p>
-    <p>Meningkatkan retensi pengguna karena mereka merasa konten website bermanfaat.</p>
-    
-  </div>
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Ilustrasi konten website">
 
-  <!-- MATERI 3 -->
-  <div class="card" id="m3">
-    <h2>BAB 3. Kualitas Layanan</h2>
+  <h3>Pengertian</h3>
+  <p>Kualitas informasi menunjukkan seberapa akurat, relevan, dan jelas konten yang ditampilkan website.</p>
 
-    <h3>3.1 Pengertian Kualitas Layanan</h3>
-    <p>Kualitas layanan merujuk pada pengalaman pengguna selama berinteraksi dengan website. Tidak hanya tampilan, tetapi juga bagaimana website memberikan bantuan, kemudahan, dan kenyamanan.</p>
-    
-    <h3>3.2 Peran Kualitas Layanan dalam Web</h3>
-    <p>Dalam pembuatan website, layanan mencakup bagaimana pengguna menemukan informasi, mendapatkan bantuan, dan merasakan kenyamanan selama mengakses situs. Kualitas layanan digital menjadi penting karena web tidak melibatkan interaksi langsung seperti layanan tatap muka.</p>
-    
-    <h3>3.3 Indikator Kualitas Layanan</h3>
-    <p>1. Responsiveness<br> Kecepatan website merespons tindakan pengguna. Contoh. tombol yang langsung bereaksi tanpa delay.</p>
-    <p>2. Assurance <br> Memberikan rasa aman dan percaya kepada pengguna. Contoh. tampilan profesional, informasi jelas, kontak valid.</p>
-    <p>3. Empathy <br> Website memperhatikan apa yang dibutuhkan pengguna. Contoh. menyediakan FAQ, halaman bantuan, atau form kontak.</p>
-    <p>4. Tangibles <br> Wujud fisik website seperti layout, warna, ikon, dan visual yang rapi.</p>
-    <p>5. Reliability <br> Pengguna merasa bahwa setiap informasi atau fitur selalu tersedia ketika dibutuhkan.</p>
-    
-    <h3>3.4 Penerapan dalam Website Proyek</h3>
-    <p>Gunakan warna yang tidak mencolok dan mudah dilihat.</p>
-    <p>Tambahkan halaman Contact Us atau Help.</p>
-    <p>Pastikan semua tautan berfungsi.</p>
-    <p>Buat tampilan yang terstruktur. header, konten, footer.</p>
-    <p>Sediakan notifikasi sederhana seperti Form berhasil dikirim.</p>
-    
-    <h3>3.5 Pentingnya Kualitas Layanan</h3>
-    <p>Pengguna lebih nyaman.</p>
-    <p>Pengguna tidak kebingungan.</p>
-    <p>Tingkat kepuasan meningkat.</p>
-    <p>Website terlihat profesional.</p>
-    
-  </div>
+  <h3>Peran dalam Web</h3>
+  <p>Informasi yang baik membantu pengguna memahami isi website dengan cepat dan tepat.</p>
 
-  <!-- MATERI 4 -->
-  <div class="card" id="m4">
-    <h2>BAB 4. Penggunaan Sistem dan Kepuasan Pengguna</h2>
+  <h3>Indikator</h3>
+  <p>Akurasi. Data benar dan valid.</p>
+  <p>Relevansi. Sesuai kebutuhan pengguna.</p>
+  <p>Kelengkapan. Informasi tidak setengah.</p>
+  <p>Konsistensi. Gaya dan struktur seragam.</p>
+  <p>Kejelasan. Bahasa mudah dipahami.</p>
 
-    <h3>4.1 System Use</h3>
-    <p>System Use menggambarkan seberapa sering dan seberapa lama Anda memakai sebuah website. Ini terlihat dari aktivitas seperti jumlah kunjungan, durasi penggunaan, dan interaksi dengan fitur. Jika pengguna cepat menutup halaman atau jarang kembali, berarti fitur atau tampilan tidak membantu kebutuhan mereka..</p>
+  <h3>Penerapan</h3>
+  <p>Gunakan paragraf singkat.</p>
+  <p>Hindari teks dummy.</p>
+  <p>Perbarui informasi secara rutin.</p>
+</section>
 
-    <h3>4.2 User Satisfaction</h3>
-    <p>User Satisfaction menggambarkan perasaan puas setelah memakai website. Ini muncul saat pengguna merasa mudah menemukan menu, cepat mendapatkan informasi, dan nyaman melihat tampilannya. Pengguna puas ketika proses di website tidak memakan banyak waktu dan tidak membingungkan.</p>
+<section class="article">
+  <h2>BAB 3. Kualitas Layanan</h2>
 
-    <h3>4.3 Hubungan</h3>
-    <p>Kualitas sistem memastikan website berjalan cepat, stabil, dan mudah dipakai.</p>
-    <p>Kualitas informasi memastikan pengguna menemukan data yang mereka cari tanpa bingung.</p>
-    <p>Kualitas layanan memastikan pengguna merasa diperhatikan lewat respons, panduan, atau fitur bantu.</p>
+  <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="Ilustrasi layanan digital">
 
-    <h3>4.4 Penerapan</h3>
-    <p>Memakai tampilan yang sederhana agar pengguna tidak bingung.</p>
-    <p>Memastikan website mudah dibuka memakai HP dan laptop.</p>
-    <p>Mengecek semua tombol dan fitur berjalan tanpa error.</p>
-    <p>Menulis informasi yang ringkas agar mudah dipahami.</p>
-    <p>Membuat tata letak yang rapi agar pengalaman penggunaan terasa lebih nyaman</p>
+  <h3>Pengertian</h3>
+  <p>Kualitas layanan menggambarkan pengalaman pengguna saat berinteraksi dengan website.</p>
 
-    <h3>4.5 Dampak</h3>
-    <p>Pengguna ingin kembali membuka website.</p>
-    <p>Pengguna lebih percaya karena pengalaman mereka positif.</p>
-    <p>Developer terlihat memahami kebutuhan pengguna.</p>
-    <p>Nilai proyek meningkat karena kualitas penggunaan lebih jelas.</p>
-  </div>
+  <h3>Indikator</h3>
+  <p>Responsiveness. Sistem cepat merespons.</p>
+  <p>Assurance. Website memberi rasa aman.</p>
+  <p>Empathy. Website memahami kebutuhan pengguna.</p>
+  <p>Tangibles. Tampilan rapi dan konsisten.</p>
 
-  <a href="index.html" class="btn">Kembali ke Portofolio</a>
+  <h3>Penerapan</h3>
+  <p>Sediakan halaman bantuan.</p>
+  <p>Pastikan semua tautan aktif.</p>
+  <p>Tampilkan notifikasi sederhana.</p>
+</section>
+
+<section class="article">
+  <h2>BAB 4. Penggunaan Sistem dan Kepuasan Pengguna</h2>
+
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Ilustrasi kepuasan pengguna">
+
+  <h3>System Use</h3>
+  <p>System Use menunjukkan seberapa sering dan lama pengguna memakai website.</p>
+
+  <h3>User Satisfaction</h3>
+  <p>Kepuasan muncul saat pengguna merasa website mudah, cepat, dan nyaman.</p>
+
+  <h3>Dampak</h3>
+  <p>Pengguna ingin kembali.</p>
+  <p>Kepercayaan meningkat.</p>
+  <p>Nilai proyek lebih tinggi.</p>
+</section>
+
+<a href="index.html" class="btn">Kembali ke Portofolio</a>
 
 </main>
-
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-  link.addEventListener('click',e=>{
-    e.preventDefault();
-    const target=document.querySelector(link.getAttribute('href'));
-    target.scrollIntoView({behavior:'smooth'});
-  });
-});
-</script>
 
 </body>
 </html>
