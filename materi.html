@@ -10,7 +10,6 @@
 <style>
 :root{
   --bg:#0b0f14;
-  --card:#111a25;
   --text:#e6eef6;
   --muted:#a0acb8;
   --accent:#00d4ff;
@@ -29,7 +28,7 @@ body{
 
 main{
   max-width:900px;
-  margin:0 auto;
+  margin:auto;
   padding:40px 20px;
 }
 
@@ -40,7 +39,7 @@ header{
 
 header h1{
   font-size:34px;
-  margin-bottom:10px;
+  margin-bottom:8px;
 }
 
 header p{
@@ -56,22 +55,14 @@ header p{
   margin-bottom:60px;
 }
 
-.article img{
-  width:100%;
-  border-radius:14px;
-  margin:25px 0;
-  border:1px solid rgba(255,255,255,0.08);
-}
-
 .article h2{
   font-size:26px;
-  margin-bottom:14px;
+  margin-bottom:16px;
 }
 
 .article h3{
   font-size:18px;
-  margin-top:24px;
-  margin-bottom:8px;
+  margin:26px 0 8px;
   color:var(--accent);
 }
 
@@ -80,6 +71,28 @@ header p{
   line-height:1.6;
   color:var(--muted);
   margin-bottom:10px;
+}
+
+.main-img{
+  width:100%;
+  max-height:220px;
+  object-fit:cover;
+  border-radius:12px;
+  margin:20px 0;
+  opacity:0.9;
+}
+
+.point{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+  margin-bottom:10px;
+}
+
+.point img{
+  width:32px;
+  height:32px;
+  opacity:0.85;
 }
 
 .btn{
@@ -102,93 +115,60 @@ header p{
 <main>
 
 <header>
-  <h1>Materi Pembelajaran Website</h1>
-  <p>Ringkasan konsep kualitas sistem, informasi, layanan, dan kepuasan pengguna</p>
+  <h1>Materi Pembelajaran</h1>
+  <p>Kualitas sistem, informasi, layanan, dan kepuasan pengguna</p>
 </header>
 
 <section class="article">
-  <h2>BAB 1. Kualitas Sistem</h2>
+<h2>BAB 1. Kualitas Sistem</h2>
 
-  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Ilustrasi sistem website">
+<img class="main-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Sistem website">
 
-  <h3>Pengertian</h3>
-  <p>Kualitas sistem menunjukkan kemampuan website berjalan stabil, cepat, dan mudah digunakan. Sistem yang baik membuat pengguna nyaman saat mengakses halaman dan fitur.</p>
+<h3>1.1 Pengertian Kualitas Sistem</h3>
+<p>Kualitas sistem adalah tingkat kemampuan suatu website dalam menyediakan fungsi yang stabil, mudah digunakan, cepat diakses, dan mampu bekerja sesuai kebutuhan pengguna. Dalam pengembangan website, kualitas sistem menjadi dasar penting karena memengaruhi apakah pengguna merasa nyaman atau justru terbebani saat menggunakan web tersebut.</p>
 
-  <h3>Peran dalam Website</h3>
-  <p>Kualitas sistem menjadi dasar utama. Tampilan menarik tidak cukup jika website lambat, error, atau sulit dipakai.</p>
+<h3>1.2 Peran Kualitas Sistem dalam Pengembangan Website</h3>
+<p>Dalam konteks tugas pembuatan website, kualitas sistem berperan sebagai fondasi utama. Website yang tampilannya bagus belum tentu berkualitas jika sistemnya error, lambat, atau sulit digunakan. Karena itu, mahasiswa perlu memahami aspek teknis yang mendukung berjalannya sistem dengan baik.</p>
 
-  <h3>Indikator</h3>
-  <p>Usability. Navigasi jelas dan konsisten.</p>
-  <p>Reliability. Fitur selalu berjalan.</p>
-  <p>Performance. Waktu loading singkat.</p>
-  <p>Security. Data pengguna terlindungi.</p>
-  <p>Functionality. Semua fitur berfungsi sesuai tujuan.</p>
+<h3>1.3 Indikator Kualitas Sistem</h3>
 
-  <h3>Penerapan</h3>
-  <p>Gunakan struktur kode rapi.</p>
-  <p>Optimalkan gambar dan script.</p>
-  <p>Uji website di berbagai perangkat.</p>
-</section>
+<div class="point">
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png">
+<p>Usability. Website harus mudah dipahami oleh pengguna baru. Menu, tombol, dan navigasi harus jelas serta tidak membingungkan.</p>
+</div>
 
-<section class="article">
-  <h2>BAB 2. Kualitas Informasi</h2>
+<div class="point">
+<img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png">
+<p>Reliability. Sistem harus dapat berjalan stabil ketika digunakan.</p>
+</div>
 
-  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Ilustrasi konten website">
+<div class="point">
+<img src="https://cdn-icons-png.flaticon.com/512/471/471662.png">
+<p>Efficiency dan Performance. Website sebaiknya dapat dibuka dengan cepat.</p>
+</div>
 
-  <h3>Pengertian</h3>
-  <p>Kualitas informasi menunjukkan seberapa akurat, relevan, dan jelas konten yang ditampilkan website.</p>
+<div class="point">
+<img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+<p>Security. Keamanan tetap diperlukan walau website sederhana.</p>
+</div>
 
-  <h3>Peran dalam Web</h3>
-  <p>Informasi yang baik membantu pengguna memahami isi website dengan cepat dan tepat.</p>
+<div class="point">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png">
+<p>Functionality. Semua fitur yang direncanakan harus berfungsi.</p>
+</div>
 
-  <h3>Indikator</h3>
-  <p>Akurasi. Data benar dan valid.</p>
-  <p>Relevansi. Sesuai kebutuhan pengguna.</p>
-  <p>Kelengkapan. Informasi tidak setengah.</p>
-  <p>Konsistensi. Gaya dan struktur seragam.</p>
-  <p>Kejelasan. Bahasa mudah dipahami.</p>
+<h3>1.4 Penerapan Kualitas Sistem pada Website Proyek</h3>
+<p>Gunakan struktur kode yang rapi dan terorganisir.</p>
+<p>Pastikan menu dapat diakses dari setiap halaman.</p>
+<p>Lakukan pengecekan error melalui console browser.</p>
+<p>Optimalkan gambar agar ukuran file tidak terlalu besar.</p>
+<p>Uji website di HP dan laptop.</p>
 
-  <h3>Penerapan</h3>
-  <p>Gunakan paragraf singkat.</p>
-  <p>Hindari teks dummy.</p>
-  <p>Perbarui informasi secara rutin.</p>
-</section>
-
-<section class="article">
-  <h2>BAB 3. Kualitas Layanan</h2>
-
-  <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="Ilustrasi layanan digital">
-
-  <h3>Pengertian</h3>
-  <p>Kualitas layanan menggambarkan pengalaman pengguna saat berinteraksi dengan website.</p>
-
-  <h3>Indikator</h3>
-  <p>Responsiveness. Sistem cepat merespons.</p>
-  <p>Assurance. Website memberi rasa aman.</p>
-  <p>Empathy. Website memahami kebutuhan pengguna.</p>
-  <p>Tangibles. Tampilan rapi dan konsisten.</p>
-
-  <h3>Penerapan</h3>
-  <p>Sediakan halaman bantuan.</p>
-  <p>Pastikan semua tautan aktif.</p>
-  <p>Tampilkan notifikasi sederhana.</p>
-</section>
-
-<section class="article">
-  <h2>BAB 4. Penggunaan Sistem dan Kepuasan Pengguna</h2>
-
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Ilustrasi kepuasan pengguna">
-
-  <h3>System Use</h3>
-  <p>System Use menunjukkan seberapa sering dan lama pengguna memakai website.</p>
-
-  <h3>User Satisfaction</h3>
-  <p>Kepuasan muncul saat pengguna merasa website mudah, cepat, dan nyaman.</p>
-
-  <h3>Dampak</h3>
-  <p>Pengguna ingin kembali.</p>
-  <p>Kepercayaan meningkat.</p>
-  <p>Nilai proyek lebih tinggi.</p>
+<h3>1.5 Pentingnya Kualitas Sistem</h3>
+<p>Pengalaman pengguna meningkat.</p>
+<p>Efisiensi penggunaan lebih baik.</p>
+<p>Tingkat kepuasan meningkat.</p>
+<p>Pengguna lebih mungkin kembali.</p>
 </section>
 
 <a href="index.html" class="btn">Kembali ke Portofolio</a>
